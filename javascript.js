@@ -8,3 +8,6 @@ function createGrid(size) {
     square.style.width = `${squareSize}px`;
     square.style.height = `${squareSize}px`;
   }};
+   square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'black';
+    });
