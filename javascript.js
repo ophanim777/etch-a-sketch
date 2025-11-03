@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 const newGridBtn = document.getElementById('new-grid');
 const containerSize = 960;
  
+const randomColor = () => `hsl(${Math.random() * 360}, 100%, 50%)`;
+
  function createGrid(size) {
       container.innerHTML = '';
       const squareSize = containerSize / size;
@@ -31,7 +33,6 @@ const containerSize = 960;
       createGrid(gridSize);
     });
 
-const randomColor = () => `hsl(${Math.random() * 360}, 100%, 50%)`;
 square.addEventListener('mouseover', () => {
   square.style.backgroundColor = randomColor();
 });
