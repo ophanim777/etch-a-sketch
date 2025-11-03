@@ -16,3 +16,8 @@ function createGrid(size) {
 }
 
 createGrid(gridSize);
+
+const randomColor = () => `hsl(${Math.random() * 360}, 100%, 50%)`;
+square.addEventListener('mouseover', () => {
+  square.style.backgroundColor = randomColor();
+});
