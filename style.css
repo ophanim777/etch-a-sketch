@@ -6,3 +6,10 @@ body {
   background-color: #f4f4f4;
   margin: 0;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  border: 2px solid #333;
+}
