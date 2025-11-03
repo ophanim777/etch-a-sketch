@@ -19,9 +19,17 @@ const containerSize = 960;
         container.appendChild(square);
       }
     }
-
-    
+   
     createGrid(16);
+
+    newGridBtn.addEventListener('click', () => {
+      let gridSize = parseInt(prompt('Enter number of squares per side (1-100):'));
+      if (isNaN(gridSize) || gridSize < 1 || gridSize > 100) {
+        alert('Please enter a valid number between 1 and 100.');
+        return;
+      }
+      createGrid(gridSize);
+    });
 
 const randomColor = () => `hsl(${Math.random() * 360}, 100%, 50%)`;
 square.addEventListener('mouseover', () => {
