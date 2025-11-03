@@ -11,4 +11,8 @@ function createGrid(size) {
    square.addEventListener('mouseover', () => {
       square.style.backgroundColor = 'black';
     });
-}}
+    container.appendChild(square);
+  }
+}
+
+createGrid(gridSize);
